@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+
+  .sidebarlist {
+    padding-left: 5px;
+    font-style: italic;
+    font-size: large;
+    font-family: cursive;
+    color:brown;
+  
+  }
+
+  .topnavbar{
+    background-image: linear-gradient(to right, #ffafbd ,#aff5ff);
+  }
+
+  .headerside {
+    font-style:italic;
+    font-family: cursive;
+    color:purple;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
+  
