@@ -27,4 +27,27 @@
     margin-top: 10px;
   }
 
-  
+  .cart-item1 {
+    
+    top:-8px;
+    right:-8px;
+    background-color: purple;
+    border-radius: 50%;
+    padding:0 5px;
+
+
+  }
+
+  .cart-item{
+    color:purple;
+    padding-left:12px;
+    margin-bottom:63px;
+    font-size: 1rem;
+  }
+
+  .user {
+    
+    padding-top:10px;
+    color:purple;
+    font-size: 1.2rem;
+  }

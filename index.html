@@ -27,11 +27,26 @@
             </button>
             <div class="collapse navbar-collapse" id="shopNavbar">
               <form class="form-inline ml-auto">
-                <input type="text" class="form-control mr-sm-2" placeholder="Search">
-                <button style="background-color: pink" type="submit" class="btn btn-light">Search</button>
+                <input id="searchItem" type="text" class="form-control mr-sm-2" placeholder="Search">
+                <button id="searchButton" style="background-color: pink" type="submit" class="btn btn-light">Search</button>
               </form>
               <div class="navbar-nav">
-                <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a><br />  
+                   <ul class="nav navbar-nav">
+                       <li>
+                        <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="badge">0 items</span></a><br />  
+                       </li>
+                       <li>
+                        <a class="user pl-3" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a> 
+                       </li>
+                   </ul> 
+
+                   <!-- <div class="cart_info">                
+                        <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><i class="cart-item">0 items</i></a><br />            
+                   </div>
+                   <div class="user-login">
+                    <a class="user" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a> -->
+
+                   <!--</div>-->  
               </div>            
             </div>    
         </div>
@@ -46,13 +61,13 @@
                         <li class="nav-item dropdown">                           
                         <a class="nav-link active dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-home fa-fw " aria-hidden="true"></i> Home </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="dress.html"> Party Time </a>
-                            <a class="dropdown-item" href="toys.html"> Toys </a>
-                            <a class="dropdown-item" href="books.html"> Books </a>
-                            <a class="dropdown-item" href="arts.html"> Arts and Crafts </a>
-                            <a class="dropdown-item" href="costumes.html"> Costumes </a>
-                        </div>    
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="dress.html"> Party Time </a>
+                                <a class="dropdown-item" href="toys.html"> Toys </a>
+                                <a class="dropdown-item" href="books.html"> Books </a>
+                                <a class="dropdown-item" href="arts.html"> Arts and Crafts </a>
+                                <a class="dropdown-item" href="costumes.html"> Costumes </a>
+                            </div>    
                         </li><br>                         
                         <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i> Cart </a>
@@ -72,9 +87,15 @@
 
             <div class="col-lg-9"> 
                 <div class="row my-5">
-                    <div class="col">                
-                        <div class="card h-60">  
-                             <img class="card-img-top img-fluid img-thumbnail" src="/img/home/pinkroom_resize1.jpg" alt="Kids Room">
+                    <div class="col-11 pl-5">                
+                        <div class="card w-35">
+                            <img src="/img/home/pinkroom_resize1.jpg" class="card-img img-fluid img-thumbnail" alt="kids Room">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text">Last updated 3 mins ago</p>
+                            </div>  
+                             <!--<img class="card-img-top img-fluid img-thumbnail" src="/img/home/pinkroom_resize1.jpg" alt="Kids Room">-->
                         </div>
                     </div>
                 </div>
