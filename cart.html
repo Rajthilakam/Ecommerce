@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+
+
+  <title>Cart Items</title>
+  </head>
+
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top topnavbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/home/mo_new.jpg" class="img-nav" height="50" width="50" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="shopNavbar">
+                <form class="form-inline ml-auto">
+                    <input id="searchItem" type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button id="searchButton" style="background-color: pink" type="submit" class="btn btn-light">Search</button>
+                </form>
+                <div class="navbar-nav">
+                    <ul class="nav navbar-nav cart-coll">
+                        <li>
+                            <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="badge">`${}` items</span></a><br />  
+                        </li>
+                        <li>
+                            <a class="user pl-3" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a> 
+                        </li>
+                    </ul> 
+                </div>            
+                </div>    
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 sidenav">      
+                <h1 class="my-4 headerside"> West Coast Kids </h1>
+                <div class="pl-5 sidebarlist">
+                        <ul class="nav flex-column">
+                            <li class="nav-item dropdown">                           
+                            <a class="nav-link active dropdown-toggle dropdown-toggle-split dropleft" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-home fa-fw " aria-hidden="true"></i> Home </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="dress.html"> Party Time </a>
+                                    <a class="dropdown-item" href="toys.html"> Toys </a>
+                                    <a class="dropdown-item" href="books.html"> Books </a>
+                                    <a class="dropdown-item" href="arts.html"> Arts and Crafts </a>
+                                    <a class="dropdown-item" href="costumes.html"> Costumes </a>
+                                </div>    
+                            </li><br>                         
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i> Cart </a>
+                            </li><br>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i> User Profile </a>
+                            </li><br>
+                            <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa fa-file fa-fw" aria-hidden="true"></i> Purchase History</a>
+                            </li><br>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> SignOut</a>
+                            </li><br>
+                        </ul>
+                </div>
+            </div>
+
+           
+                <div class="col-lg-9">
+                    <div class="row cart-page">
+                        <div class="col-sm-3">
+                            
+                            <img src="/img/Toys/teddy_new.jpg" class="card-img" alt="Teddy Bear" >
+                            
+                        </div>
+                        <div class="col-sm-3 col-md-3 text-center pl-5 pt-5">
+                                <h4 class="text-center">Teddy Bear</h4>
+                        </div>
+                        <div class="col-sm-3 pt-4 pl-3">
+                            <div class="quantity text-center btn-num">
+                                <button class="plus-btn btn-num" type="button" name="button">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                                <input type="text" name="name" value="1">
+                                <button class="minus-btn btn-num" type="button" name="button">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </button>
+                            </div> 
+                        </div>
+                        <div class="col-sm-3 pr-5 pt-5">
+                            <h4 id="price">$10.99</h4>   
+                        </div>
+                    </div>                    
+                </div>  
+             
+        </div>
+    </div>        
+
+  </body>

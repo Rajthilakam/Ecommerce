@@ -2,6 +2,10 @@
     display: none;
 }
 
+.img-nav{
+  border-radius: 50%;
+}
+
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,102,203);
   } 
@@ -50,4 +54,52 @@
     padding-top:10px;
     color:purple;
     font-size: 1.2rem;
+  }
+
+  .card-border{
+    border:0;
+  }
+
+  /* .row-content{
+    padding-left: 50px;
+  } */
+
+  .cart-btn{
+    background-color:rgb(248, 160, 248);
+    
+  }
+
+  .card-title {
+    font-style: normal;
+    color:blueviolet;
+  }
+
+  .cart-page{
+    padding:20px;
+    min-height: 200px;
+  }
+
+
+  .quantity {
+    padding-top: 20px;
+    margin-right: 60px;
+    
+  }
+  .quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+   
+  button[class*=btn-num] {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
   }

@@ -10,161 +10,162 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />    
     
-    <link rel="stylesheet" href="css/styles.css" />
-
-    
+    <link rel="stylesheet" href="css/styles.css" />    
 
     <title>Kids EComm</title>
 </head>
 <body>
 
-    
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top topnavbar">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/home/mo_new.jpg" height="50" width="50" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="shopNavbar">
-              <form class="form-inline ml-auto">
-                <input id="searchItem" type="text" class="form-control mr-sm-2" placeholder="Search">
-                <button id="searchButton" style="background-color: pink" type="submit" class="btn btn-light">Search</button>
-              </form>
-              <div class="navbar-nav">
-                   <ul class="nav navbar-nav">
-                       <li>
-                        <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="badge">0 items</span></a><br />  
-                       </li>
-                       <li>
-                        <a class="user pl-3" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a> 
-                       </li>
-                   </ul> 
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top topnavbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="img/home/mo_new.jpg" class="img-nav" height="50" width="50" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="shopNavbar">
+                <form class="form-inline ml-auto">
+                    <input id="searchItem" type="text" class="form-control mr-sm-2" placeholder="Search">
+                    <button id="searchButton" style="background-color: pink" type="submit" class="btn btn-light">Search</button>
+                </form>
+                <div class="navbar-nav">
+                    <ul class="nav navbar-nav cart-coll">
+                        <li>
+                            <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><span class="badge">`${}` items</span></a><br />  
+                        </li>
+                        <li>
+                            <a class="user pl-3" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a> 
+                        </li>
+                    </ul> 
 
-                   <!-- <div class="cart_info">                
-                        <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><i class="cart-item">0 items</i></a><br />            
-                   </div>
-                   <div class="user-login">
-                    <a class="user" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a> -->
+                    <!-- <div class="cart_info">                
+                            <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i><i class="badge">`${}` items</i></a><br />            
+                    </div>
+                    <div class="user-login">
+                        <a class="user" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a> -->
 
-                   <!--</div>-->  
-              </div>            
-            </div>    
-        </div>
-    </nav>
-            
-    <div class="container-fluid">
-        <div class="row">
-           <div class="col-lg-3 ">      
-              <h1 class="my-4 headerside"> West Coast Kids </h1>
-              <div class="pl-5 sidebarlist">
-                    <ul class="nav flex-column">
-                        <li class="nav-item dropdown">                           
-                        <a class="nav-link active dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-home fa-fw " aria-hidden="true"></i> Home </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="dress.html"> Party Time </a>
-                                <a class="dropdown-item" href="toys.html"> Toys </a>
-                                <a class="dropdown-item" href="books.html"> Books </a>
-                                <a class="dropdown-item" href="arts.html"> Arts and Crafts </a>
-                                <a class="dropdown-item" href="costumes.html"> Costumes </a>
-                            </div>    
-                        </li><br>                         
-                        <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i> Cart </a>
-                        </li><br>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i> User Profile </a>
-                        </li><br>
-                        <li class="nav-item">
-                        <a class="nav-link " href="#"><i class="fa fa-file fa-fw" aria-hidden="true"></i> Purchase History</a>
-                        </li><br>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> SignOut</a>
-                        </li><br>
-                    </ul>
-                </div>
+                    <!--</div>-->  
+                </div>            
+                </div>    
             </div>
+        </nav>
+    </header>
 
-            <div class="col-lg-9"> 
-                <div class="row my-5">
-                    <div class="col-11 pl-5">                
-                        <div class="card w-35">
-                            <img src="/img/home/pinkroom_resize1.jpg" class="card-img img-fluid img-thumbnail" alt="kids Room">
-                            <div class="card-img-overlay">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text">Last updated 3 mins ago</p>
-                            </div>  
-                             <!--<img class="card-img-top img-fluid img-thumbnail" src="/img/home/pinkroom_resize1.jpg" alt="Kids Room">-->
-                        </div>
+
+    <section class="banner">       
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-2 sidenav">      
+                <h1 class="my-4 headerside"> West Coast Kids </h1>
+                <div class="pl-5 sidebarlist">
+                        <ul class="nav flex-column">
+                            <li class="nav-item dropdown">                           
+                            <a class="nav-link active dropdown-toggle dropdown-toggle-split dropleft" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-home fa-fw " aria-hidden="true"></i> Home </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="dress.html"> Party Time </a>
+                                    <a class="dropdown-item" href="toys.html"> Toys </a>
+                                    <a class="dropdown-item" href="books.html"> Books </a>
+                                    <a class="dropdown-item" href="arts.html"> Arts and Crafts </a>
+                                    <a class="dropdown-item" href="costumes.html"> Costumes </a>
+                                </div>    
+                            </li><br>                         
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i> Cart </a>
+                            </li><br>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-user fa-fw" aria-hidden="true"></i> User Profile </a>
+                            </li><br>
+                            <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa fa-file fa-fw" aria-hidden="true"></i> Purchase History</a>
+                            </li><br>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i> SignOut</a>
+                            </li><br>
+                        </ul>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                      <div class="card h-80">
-                        <a href="dress.html"><img class="card-img-top img-fluid img-thumbnail" src="img/home/kidsfashion.jpg" alt="Dress"></a>
-                        <div class="card-body">
-                          <h4 class="card-title">
-                            <a href="dress.html">Party Time</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-80">
-                          <a href="toys.html"><img class="card-img-top img-fluid img-thumbnail" src="img/home/toys.jpg" alt="Toys"></a>
-                          <div class="card-body">
-                                <h4 class="card-title">
-                                <a href="toys.html"> Toys </a>
-                                </h4>
-                           </div>
-                        </div>
-                    </div>
-            
-            
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-80">
-                          <a href="books.html"><img class="card-img-top img-fluid img-thumbnail" src="img/home/books.jpg" alt="Books"></a>
-                          <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="books.html">Books</a>
-                                </h4>
-                          </div>
-                        </div>
-                    </div>
-            
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-80">
-                            <a href="arts.html"><img class="card-img-top img-fluid img-thumbnail" src="img/home/schoolsupplies.jpg" alt="schoolsupplies"></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="arts.html"> Arts and Crafts</a>
-                                </h4>
+                
+                
+                <div class="col-lg-9"> 
+                    <div class="row my-5">
+                        <div class="col-12 pr-3">                
+                            <div class="card w-35 shadow border-0">
+                                <img src="/img/home/pinkroom_resize1.jpg" class="card-img img-fluid" alt="kids Room">
+                                <div class="card-img-overlay">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                                </div>  
+                                <!--<img class="card-img-top img-fluid img-thumbnail" src="/img/home/pinkroom_resize1.jpg" alt="Kids Room">-->
                             </div>
                         </div>
                     </div>
 
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-80 card-border">
+                            <a href="dress.html"><img class="card-img-top img-fluid " src="img/home/kidsfashion.jpg" alt="Dress"></a>
+                            <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="dress.html">Party Time</a>
+                            </h4>
+                            </div>
+                        </div>
+                        </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="cardradius">
-                          <div class="card h-80">
-                                <a href="costumes.html"><img class="card-img-top image-fluid img-thumbnail" src="/img/home/costumes_new.jpg" alt="Costumes"></a>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-80 border-0">
+                            <a href="toys.html"><img class="card-img-top img-fluid " src="img/home/toys.jpg" alt="Toys"></a>
+                            <div class="card-body">
+                                    <h4 class="card-title">
+                                    <a href="toys.html"> Toys </a>
+                                    </h4>
+                            </div>
+                            </div>
+                        </div>
+                
+                
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-80 border-0">
+                            <a href="books.html"><img class="card-img-top img-fluid" src="img/home/books.jpg" alt="Books"></a>
+                            <div class="card-body">
+                                    <h4 class="card-title">
+                                        <a href="books.html">Books</a>
+                                    </h4>
+                            </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-80 border-0">
+                                <a href="arts.html"><img class="card-img-top img-fluid " src="img/home/schoolsupplies.jpg" alt="schoolsupplies"></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        <a href="costumes.html">Costumes</a>
-                                    </h4>                
+                                        <a href="arts.html"> Arts and Crafts</a>
+                                    </h4>
                                 </div>
-                          </div>
+                            </div>
                         </div>
-                    </div>      
 
 
-                </div>   
-            </div> 
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="cardradius">
+                                <div class="card h-80 border-0">
+                                    <a href="costumes.html"><img class="card-img-top image-fluid" src="/img/home/costumes_new.jpg" alt="Costumes"></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="costumes.html">Costumes</a>
+                                        </h4>                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                    </div>                      
+                </div>                 
+            </div>
         </div>
-    </div>
+    </section>
 
 
     <footer class="py-5 bg-info">
@@ -178,6 +179,8 @@
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="app.js"></script>
+
       
     
 
