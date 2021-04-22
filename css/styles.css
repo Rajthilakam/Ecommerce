@@ -64,7 +64,7 @@
     padding-left: 50px;
   } */
 
-  .cart-btn{
+  .addCart{
     background-color:rgb(248, 160, 248);
     
   }
@@ -77,6 +77,7 @@
   .cart-page{
     padding:20px;
     min-height: 200px;
+    border-bottom: 1px ridge;
   }
 
 

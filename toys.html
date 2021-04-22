@@ -20,24 +20,81 @@
 
 <body>
 
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light sticky-top topnavbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/home/mo_new.jpg" class="img-nav" height="50"
+            width="50" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="shopNavbar">
+          <form class="form-inline ml-auto">
+            <input type="text" class="form-control mr-sm-2" placeholder="Search">
+            <button style="background-color: pink" type="submit" class="btn btn-light">Search</button>
+          </form>
+          <div class="navbar-nav">
+            <ul class="nav navbar-nav cart-coll">
+              <li>
+                <a class="cart-btn pl-3" href="#" id="cart-btn"><i class="fa fa-shopping-cart fa-2x"
+                    aria-hidden="true"></i><span class="badge cartItems">0 items</span></a><br />
+              </li>
+              <li>
+                <a class="user pl-3" href="#"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> SignIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <nav class="navbar navbar-expand-sm navbar-light sticky-top topnavbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/home/mo_new.jpg"  class="img-nav" height="50" width="50" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#shopNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="shopNavbar">
-        <form class="form-inline ml-auto">
-          <input type="text" class="form-control mr-sm-2" placeholder="Search">
-          <button style="background-color: pink" type="submit" class="btn btn-light">Search</button>
-        </form>
-        <div class="navbar-nav">
-          <a class="content pl-3" href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a><br />
+  <div id="cart-content" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Cart Items</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row cart-page">
+              <div class="col-lg-3">
+                <img src="/img/Toys/teddy_new.jpg" class="card-img" alt="Teddy Bear">
+              </div>
+              <div class="col-lg-2 text-center pt-4">
+                <h5 class="text-center text-wrap">Teddy Bear</h5>
+              </div>
+              <div class="col-lg-5 pt-4 ">
+                <div class="quantity text-center btn-num">
+                  <button class="plus-btn btn-num" type="button" name="button">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </button>
+                  <input type="text" name="name" id="item-quantity" value="1">
+                  <button class="minus-btn btn-num" type="button" name="button">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-2 pt-5">
+                <h4 class="item-price">$10.99</h4>
+                <button type="button" id="remove_item" class="btn btn-info mt-5">Remove</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="orderTotal text-right pt-2">
+                <h4>Order Total:$ 10.99</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+
 
   <div class="container-fluid">
     <div class="row">
@@ -46,15 +103,16 @@
         <div class="pl-5 sidebarlist">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-home fa-fw " aria-hidden="true"></i> Home </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="dress.html"> Party Time </a>
-                  <a class="dropdown-item" href="toys.html"> Toys </a>
-                  <a class="dropdown-item" href="books.html"> Books </a>
-                  <a class="dropdown-item" href="arts.html"> Arts and Crafts </a>
-                  <a class="dropdown-item" href="costumes.html"> Costumes </a>
-              </div>    
+                <a class="dropdown-item" href="dress.html"> Party Time </a>
+                <a class="dropdown-item" href="toys.html"> Toys </a>
+                <a class="dropdown-item" href="books.html"> Books </a>
+                <a class="dropdown-item" href="arts.html"> Arts and Crafts </a>
+                <a class="dropdown-item" href="costumes.html"> Costumes </a>
+              </div>
             </li><br>
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i> Cart </a>
@@ -72,39 +130,42 @@
         </div>
       </div>
 
-      <div class="col-lg-9"> 
+      <div class="col-lg-9">
         <div class="row my-3">
-            <div class="col">  
-                <h1>Toys</h1>  
-            </div>
-        </div>  
-        
+          <div class="col">
+            <h1>Toys</h1>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col">
-            <div class="card mb-5" style="max-width: 1240px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="/img/Toys/teddy_new.jpg" class="card-img" alt="Teddy Bear">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h2 class="card-title">Teddy Bear</h2><br>
-                    <h5 class="card-text">This adorable MorisMos teddy bear,is best choice for decorating your house or playroom.
-                                          Handmade quality makes each bear was sooo soft and plush,you will love it</h5><br>                                        
-                    <div class="row row-content">
-                      <div class="col-6 item_price">
-                        <h5 id="item-price">$10</h5>
-                      </div>  
-                      <div class="col-6 ">
-                        <button type="button" id="cart_btn" class="btn cart-btn">Add to Cart</button>
-                      </div>                     
-                    </div>                                      
+            <div class="card-class">
+              <div class="card mb-5" style="max-width: 1240px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="/img/Toys/teddy_new.jpg" class="card-img" alt="Teddy Bear">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title">Teddy Bear</h2><br>
+                      <h5 class="card-text">This adorable MorisMos teddy bear,is best choice for decorating your house
+                        or playroom.
+                        Handmade quality makes each bear was sooo soft and plush,you will love it</h5><br>
+                      <div class="row row-content">
+                        <div class="col-6 item-price">
+                          <h5 id="item-price">$10</h5>
+                        </div>
+                        <div class="col-6 ">
+                          <button type="button" id="addCart" class="btn addCart">Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="row">
           <div class="col">
@@ -116,17 +177,18 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="row">
-          <div class="col">
+          <div class="col test">
             <div class="card mb-5" style="max-width: 1240px;">
               <div class="row no-gutters">
                 <div class="col-md-4">
@@ -135,16 +197,17 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> 
-      </div>  
-        
+        </div>
+      </div>
+
 
 
 
@@ -152,9 +215,9 @@
 
 
     </div>
-  
+
   </div>
-  
+
 
 
   <footer class="py-5 bg-info">
@@ -168,6 +231,7 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
 
 
 
