@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      	"sys": { "id": "1" },     
+        "title": "Party Time",
+        "image": "./img/home/kidsfashion.jpg",
+        "href" : "dress.html"
+
+      
+    },
+    {
+      	"sys": { "id": "2" }, 
+        "title": "Toys",
+        "image": "./img/home/toys.jpg" ,
+        "href" : "toys.html"
+      
+    },
+    {
+      	"sys": { "id": "3" },     
+        "title": "Books",
+        "image": "./img/home/books.jpg",
+        "href" : "books.html" 
+      
+    },
+    {
+      "sys": { "id": "4" },    
+        "title": "Arts and Crafts",
+        "image":"./img/home/schoolsupplies.jpg",
+        "href" : "arts.html"
+
+    },
+    {
+      "sys": { "id": "5" },
+       "title": "Costumes",
+       "image": "./img/home/costumes_new.jpg",
+       "href" : "costumes.html" 
+     
+    }
+    
+  ]
+}
