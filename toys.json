@@ -1,0 +1,30 @@
+{
+    "toys": [
+      {
+            "sys": { "id": "t1" },     
+          "title": "Teddy Bear",
+          "price": 10.99,
+        "description":"This adorable MorisMos teddy bear,is best choice for decorating your house or playroom.Handmade quality makes each bear was sooo soft and plush,you will love it",
+          "image": "./img/Toys/teddy_new.jpeg" 
+        
+      },
+      {
+            "sys": { "id": "t2" }, 
+          "title": "Minions",
+          "price": 5.99,
+          "description" : "Despicable Me Minion Foil Balloons Dave and Stuart",
+          "image": "./img/Toys/minions_new.jpeg" 
+        
+      },
+      {
+            "sys": { "id": "t3" },     
+          "title": "Bowling Pins",
+          "price": 6.99,
+          "description":"Toy bowling set for kids help in developing gross motor skills, spatial awareness, hand-eye coordination and balance.",
+          "image": "./img/Toys/BowlingPins_new.jpeg" 
+        
+      }
+     
+      
+    ]
+  }

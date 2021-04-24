@@ -34,17 +34,66 @@ $("#cart-btn").click(function () {
 
 
 
-const cart = document.querySelector('.cart-btn');
-console.log(cart)
+const cartBtn = document.querySelector('.cart-btn');
+console.log(cartBtn)
 
 const cartItems = document.querySelector('.cartItems').innerHTML;
 console.log(cartItems)
 
-const cartContent =document.querySelector('.cart-content')
+const cartContent =document.querySelector('#cart-content')
 console.log(cartContent)
 
 const cartPage = document.querySelector('.cart-page');
 console.log(cartPage)
+
+const removeItem = document.querySelector('#remove-item')
+console.log(removeItem)
+
+const orderTotal = document.querySelector('.orderTotal').textContent;
+console.log(orderTotal)
+
+const addCart =document.querySelector('.addCart')
+console.log(addCart)
+
+const products = document.querySelector('.products')
+console.log(products)
+
+let cart = []
+
+class Products {
+  async getProducts() {
+    try {
+    let result = await fetch('http://localhost:3000/toys.json'); 
+    let data = await result.json();
+    console.log(data)
+    let products = data.toys;
+    return products
+  } catch(error){
+    console.log(error)
+  }
+  }
+}
+
+
+class UI {
+  displayProducts(products) {
+    console.log(products)
+
+  }
+}
+
+class Storage {
+
+}
+
+document.addEventListener('DOMContentLoaded',() => {
+  const products = new Products()
+  const ui = new UI()
+  products.getProducts().then(products => ui.displayProducts(products))
+})
+
+
+
 
 fetch('http://localhost:3000/products.json')
 .then(response => {
