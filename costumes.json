@@ -1,0 +1,30 @@
+{
+    "costumes": [
+      {
+            "sys": { "id": "c1" },     
+          "title": "BatMan",
+          "price": 10.99,
+        "description":"This adorable MorisMos teddy bear,is best choice for decorating your house or playroom.Handmade quality makes each bear was sooo soft and plush,you will love it",
+          "image": "./img/Costumes/batman.jpg" 
+        
+      },
+      {
+            "sys": { "id": "c2" }, 
+          "title": "MinneMouse",
+          "price": 5.99,
+          "description" : "Despicable Me Minion Foil Balloons Dave and Stuart",
+          "image": "./img/Costumes/minnemouse.jpg" 
+        
+      },
+      {
+            "sys": { "id": "c3" },     
+          "title": "SpiderMan",
+          "price": 6.99,
+          "description":"Toy bowling set for kids help in developing gross motor skills, spatial awareness, hand-eye coordination and balance.",
+          "image": "./img/Costumes/costumes.jpg" 
+        
+      }
+     
+      
+    ]
+  }

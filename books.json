@@ -1,0 +1,21 @@
+{
+    "books": [
+      {
+            "sys": { "id": "b1" },     
+          "title": "Dairy of a Wimpy Kid",
+          "price": 10.99,
+        "description":"This adorable MorisMos teddy bear,is best choice for decorating your house or playroom.Handmade quality makes each bear was sooo soft and plush,you will love it",
+          "image": "./img/Books/wimpykids.jpg" 
+        
+      },
+      {
+            "sys": { "id": "b2" }, 
+          "title": "Harry Potter",
+          "price": 15.99,
+          "description" : "Despicable Me Minion Foil Balloons Dave and Stuart",
+          "image": "./img/Books/Harrypotter.jpg" 
+        
+      }
+      
+    ]
+  }
