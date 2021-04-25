@@ -83,6 +83,23 @@
   }
 
 
+  
+    .card-img:hover {
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari 3-8 */
+      transform: scale(1.1); 
+      transition: .5s;
+    
+  }
+
+  .card-img-top:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    transition: .5s;
+  
+}
+
   .quantity {
     padding-top: 20px;
     margin-right: 60px;
