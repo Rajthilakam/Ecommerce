@@ -42,4 +42,12 @@ document.addEventListener('DOMContentLoaded',() => {
     const ui = new UI()
     products.getProducts().then(products => ui.displayProducts(products))
   })
-  
+
+
+
+
+
+
+
+
+

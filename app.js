@@ -33,7 +33,7 @@ $("#cart-btn").click(function () {
 })
 
 
-
+/*
 const cartBtn = document.querySelector('.cart-btn');
 console.log(cartBtn)
 
@@ -54,6 +54,7 @@ console.log(orderTotal)
 
 const addCart =document.querySelector('.addCart')
 console.log(addCart)
+*/
 
 const products = document.querySelector('.products')
 console.log(products)
@@ -104,7 +105,7 @@ fetch('http://localhost:3000/products.json')
 .then(response => {
     let result = response
     console.log(typeof result)
-    console.log(result.items[0].image)
+    console.log(result.toys[0])
 })
 .catch(error => {
     console.error(error)
